@@ -4968,3 +4968,11 @@ b, strong {
   border-top: none;
   height: calc(100% - 160px);
 }
+
+#headerVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
