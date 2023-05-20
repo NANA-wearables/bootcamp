@@ -41,23 +41,23 @@
 		<div class="px-40 pt-60 pb-60 text-center inner">
 			<div>
 				<a href="http://wiki.nana-kit.com/" target="_blank" class="f-heading f-22 link color-main mb-20">
-					Wiki
+					{{page.menuWiki}}
 				</a>
 			</div>
 			<div>
 				<a href="https://www.nana-kit.com/tutoriais" target="_blank"
 					class="f-heading f-22 link color-main mb-20">
-					Tutoriais
+					{{page.menuTutorials}}
 				</a>
 			</div>
 			<div>
 				<a href="#comunidade" class="f-heading f-22 link color-main mb-20">
-					Comunidade
+					{{page.menuCommunity}}
 				</a>
 			</div>
 			<div>
 				<a href="#apoiadores" class="f-heading f-22 link color-main mb-20">
-					Apoiadores
+					{{page.menuWiki}}
 				</a>
 			</div>
 			<div class="socials mt-60">
@@ -79,14 +79,14 @@
 				<div class="row justify-content-between align-items-center">
 					<div class="col-lg-5 d-flex align-items-center" data-aos="fade-down" data-aos-delay="1000">
 						<a href="http://wiki.nana-kit.com/" target="_blank" class="link color-white f-18 bold mr-30">
-							Wiki
+							{{page.menuWiki}}
 						</a>
 						<a href="https://www.nana-kit.com/tutoriais" target="_blank"
 							class="link color-white f-18 bold mr-30">
-							Tutoriais
+							{{page.menuTutorials}}
 						</a>
 						<a href="#" class="link color-white f-18 bold">
-							Comunidade
+							{{page.menuCommunity}}
 						</a>
 					</div>
 					<div class="col-lg-2 text-center">
@@ -98,13 +98,16 @@
 					<div class="col-lg-5 d-flex justify-content-end align-items-center" data-aos="fade-down"
 						data-aos-delay="1000">
 						<a href="#apoiadores" class="link color-white f-18 bold mr-30">
-							Apoiadores
+							{{page.menuSupport}}
 						</a>
-						<a href="https://www.instagram.com/nana.wearables/" target="_blank"
+						<!-- <a href="https://www.instagram.com/nana.wearables/" target="_blank"
 							class="btn ml-20 sm action-1">
 							<i class="fab fa-instagram mt-10">
 							</i>
-						</a>
+						</a> -->
+						<div class="text-center f-20 link ml-20 bold action-3">
+							<a href="index-pt.html" class="action-3 link">PT</a> | <a href="index-en.html" class="action-3 link">EN</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -119,7 +122,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-9" data-aos="fade-down" data-aos-delay="0">
 					<h1 class="color-white bold text-uppercase f-100">
-						Um bootcamp em <br>wearables tech
+						{{page.headerTitle1}} <br>{{page.headerTitle2}}
 					</h1>
 				</div>
 				<div class="col-lg-12 relative h-70 mt-80 mb-70 btn_holder" data-aos="fade-down" data-aos-delay="250">
@@ -132,8 +135,7 @@
 				<div class="col-md-6 color-white f-28 medium text-adaptive bold" data-aos="fade-down"
 					data-aos-delay="500">
 					<div>
-						NANA é um bootcamp que oferece um método de ensino e aprendizagem para o universo dos wearables
-						tech!
+						{{page.headerSubTitle}}
 					</div>
 				</div>
 			</div>
@@ -146,17 +148,14 @@
 				<div class="col-lg-1">
 				</div>
 				<div class="mb-20 col-lg-9 f-22 text-adaptive" data-aos="fade-down" data-aos-delay="0">
-					Wearables o quê?
+					{{page.aboutTitle}}
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-1">
 				</div>
 				<div class="col-lg-8 color-heading op-7 text-adaptive" data-aos="fade-down" data-aos-delay="250">
-					Você já ouviu falar em wearables tech? Se não, prepare-se para conhecer o universo dos vestíveis
-					inteligentes. Smart bands, relógios conectados e muitas outras tecnologias já estão disponíveis no
-					mercado, mas e se você pudesse levar essa tecnologia para suas roupas e acessórios? O NANA é o lugar
-					certo para aprender e colocar em prática ideias inovadoras.
+					{{page.aboutText}}
 				</div>
 			</div>
 		</div>
@@ -171,23 +170,22 @@
 						News
 					</div>
 					<h2 class="mt-10 mb-10 small" data-aos="fade-down" data-aos-delay="0">
-						Cadastre seu email <br>para saber mais
+						{{page.newsTitle1}} <br>{{page.newsTitle2}}
 					</h2>
 					<div class="text-adaptive" data-aos="fade-down" data-aos-delay="250">
-						(Tem um bug aqui que não mostra confirmação de cadastro, mas confia que é só apertar inscrever.
-						Aí a gente manda um email para confirmar)
+						{{page.newsObs}}
 					</div>
 					<form
 						action="https://docs.google.com/forms/d/e/1FAIpQLSfroSc3OFdKeyiGBKghZywKxV9nV6_vvuo-Dwwsk-zzjPnc1Q/formResponse"
 						method="POST" class="mt-40">
 						<div class="row no-gutters">
 							<div class="col-sm-7" data-aos="fade-down" data-aos-delay="250">
-								<input type="email" name="entry.1783604018" placeholder="Seu email" required="required"
+								<input type="email" name="entry.1783604018" placeholder="{{page.newsEmail}}" required="required"
 									class="input w-full border-transparent-white focus-white color-white placeholder-transparent-white text-center text-lg-left">
 							</div>
 							<div class="col-lg-4 col-sm-5" data-aos="fade-down" data-aos-delay="500">
 								<button type="submit" value="Submit" class="btn ml-10 action-1">
-									Inscrever
+									{{page.newsButton}}
 								</button>
 							</div>
 						</div>
@@ -206,12 +204,11 @@
 			<div class="row justify-content-center text-center">
 				<div class="col-xl-8 col-lg-10">
 					<h2 class="small" data-aos="fade-down" data-aos-delay="0">
-						Bootcamp
+						{{page.bootcampTitle}}
 					</h2>
 					<div class="mt-25 mb-65 f-22 color-heading text-adaptive description" data-aos="fade-down"
 						data-aos-delay="250">
-						Um pouco workshop, um pouco sprint, um pouco hackathon. Essa é a proposta para praticar
-						wearables tech que o NANA oferece de modo itinerante e ágil.
+						{{page.bootcampSubTitle}}
 					</div>
 				</div>
 			</div>
@@ -221,28 +218,26 @@
 				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 pt-55">
 					<div class="mb-95 block" data-aos="fade-down" data-aos-delay="250">
 						<div class="mb-10 f-20 semibold title">
-							WORKSHOP
+							{{page.bootcampTopic1}}
 						</div>
 						<div class="color-heading text-adaptive">
-							Hora de se ferramentar um pouco e entender o básico de eletrônica e de programação com
-							Arduino.
+							{{page.bootcampTopic1Text}}
 						</div>
 					</div>
 					<div class="mb-95 block" data-aos="fade-down" data-aos-delay="250">
 						<div class="mb-10 f-20 semibold title">
-							SPRINT
+							{{page.bootcampTopic2}}
 						</div>
 						<div class="color-heading text-adaptive">
-							Trabalho em grupo para desenvolver tecnologias vestíveis (wearables tech) de acordo com a
-							proposta.
+							{{page.bootcampTopic2Text}}
 						</div>
 					</div>
 					<div class="mb-95 block" data-aos="fade-down" data-aos-delay="250">
 						<div class="mb-10 f-20 semibold title">
-							HACKATHON
+							{{page.bootcampTopic3}}
 						</div>
 						<div class="color-heading text-adaptive">
-							Cada edição tem um cliente/usuário real para guiar o desenvolvimento das peças.
+							{{page.bootcampTopic3Text}}
 						</div>
 					</div>
 				</div>
@@ -262,13 +257,13 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="col-xl-7 col-lg-8">
 					<h6 class="f-22 regular text-adaptive" data-aos="fade-down" data-aos-delay="0">
-						Interessado em patrocinar um bootcamp NANA? Agende um call!
+						{{page.callTitle}}
 					</h6>
 				</div>
 				<div class="col-xl-3 col-lg-4 text-lg-right" data-aos="fade-down" data-aos-delay="250">
 					<a href="https://calendly.com/lina-lopes/30min?back=1&month=2022-12" target="_blank"
 						class="btn mt-30 mt-lg-0 lg action-1">
-						Agendar aqui!
+						{{page.callButton}}
 					</a>
 				</div>
 			</div>
@@ -280,7 +275,7 @@
 			<div class="row justify-content-center">
 				<div class="col-xl-10 col-lg-11">
 					<h2 class="small" data-aos="fade-down" data-aos-delay="0">
-						Um pouco do nosso fluxo
+						{{page.flowTitle}}
 					</h2>
 					<div class="row">
 						<div class="mt-25 col-lg-10 inner">
@@ -293,12 +288,10 @@
 								</div>
 								<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
 									<div class="f-heading f-18 medium">
-										Instrumentalização
+										{{page.flow1}}
 									</div>
 									<div class="mt-20 color-heading text-adaptive">
-										O primeiro dia do bootcamp é focado em instrumentalizar os participantes no
-										universo da eletrônica, materiais condutivos flexíveis e programação com
-										Arduino.
+										{{page.flow1Text}}
 									</div>
 									<div class="mt-35 d-sm-flex align-items-start video_block">
 										<a href="https://www.youtube.com/embed/RcTFVcoibI0?rel=0&amp;showinfo=0"
@@ -313,8 +306,7 @@
 												NANA wiki
 											</div>
 											<div class="mt-15 text-adaptive">
-												Uma wiki para a gente se organizar, tanto sobre a iniciação em
-												eletrônica e arduino quanto com relação aos projetos gerados.
+												{{page.flowWikiText}}
 											</div>
 										</div>
 									</div>
@@ -329,13 +321,11 @@
 								</div>
 								<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
 									<div class="f-heading f-18 medium">
-										Sprint
+										{{page.flow2}}
 									</div>
 									<div class="mt-20 color-heading text-adaptive">
 										<div>
-											Na sequência, os times (4 a 5 pessoas) começam a ideação e a prototipação
-											fazendo uso de eletrônica, fabricação digital e de máquinas de corte e
-											costura.
+											{{page.flow2Text}}
 										</div>
 									</div>
 								</div>
@@ -347,12 +337,11 @@
 								</div>
 								<div class="ml-70 pt-10 block_inner" data-aos="fade-down" data-aos-delay="250">
 									<div class="f-heading f-18 medium">
-										Apresentação
+										{{page.flow3}}
 									</div>
 									<div class="mt-20 color-heading text-adaptive">
 										<div>
-											Ao final, um júri de especialistas irão escolher a(s) peça(s) que farão
-											parte do show. Os participantes cedem os protótipos para o acervo do NANA.
+											{{page.flow3Text}}
 										</div>
 									</div>
 								</div>
@@ -360,12 +349,10 @@
 						</div>
 					</div>
 					<h2 class="small mt-80" data-aos="fade-down" data-aos-delay="0">
-						Próximo Bootcamp
+						{{page.nextTitle}}
 					</h2>
 					<div class="col-lg-8 color-heading op-7 text-adaptive" data-aos="fade-down" data-aos-delay="250">
-						O bootcamp em wearables tech do NANA acontecerá de 
-						<br>
-						06 a 08 de abril das 10h às 19h no Espaço Fashion Tech da Campus Party Brasília
+						{{page.nextText}}
 					</div>
 				</div>
 			</div>
@@ -377,15 +364,15 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="col-xl-7 col-lg-8">
 					<h6 class="f-22 regular text-adaptive" data-aos="fade-down" data-aos-delay="0">
-						Quer saber mais do próximo bootcamp onde e quando vai rolar? 
+						{{page.nextCTA1}}
 						<br>
-						Acesse nosso release!
+						{{page.nextCTA2}}
 					</h6>
 				</div>
 				<div class="col-xl-3 col-lg-4 text-lg-right" data-aos="fade-down" data-aos-delay="250">
 					<a href="https://docs.google.com/document/d/1nm1t-2dVJO9KdgrUTUAU2k7NFkP7d8t6eROM3UvIaQw/edit#heading=h.x6vkmp67gpzu" target="_blank"
 						class="btn mt-30 mt-lg-0 lg action-1">
-						Release
+						{{page.nextButton}}
 					</a>
 				</div>
 			</div>
@@ -397,7 +384,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8 col-md-10 col-sm-11" data-aos="fade-down" data-aos-delay="0">
 					<h2 class="small">
-						Comunidade
+						{{page.communityTitle}}
 					</h2>
 				</div>
 			</div>
@@ -406,10 +393,10 @@
 					<div data-aos="fade-down" data-aos-delay="0">
 						<img src="i/lina.jpg" srcset="i/lina.jpg 2x" alt="" class="radius10 img-fluid">
 						<div class="mt-20 mb-10 f-22 title">
-							Lina Lopes
+							{{page.team1}}
 						</div>
 						<div class="f-14 semibold text-uppercase sp-20 color-heading">
-							LILO.ZONE
+							{{page.team1Tag}}
 						</div>
 					</div>
 				</a>
@@ -417,10 +404,10 @@
 					<div data-aos="fade-down" data-aos-delay="250">
 						<img src="i/mau.jpg" srcset="i/mau.jpg 2x" alt="" class="radius10 img-fluid">
 						<div class="mt-20 mb-10 f-22 title">
-							Mau Maker
+							{{page.team2}}
 						</div>
 						<div class="f-14 semibold text-uppercase sp-20 color-heading">
-							Mau Maker
+							{{page.team2Tag}}
 						</div>
 					</div>
 				</a>
@@ -428,65 +415,66 @@
 					<div data-aos="fade-down" data-aos-delay="500">
 						<img src="i/ricardo.jpg" srcset="i/ricardo.jpg 2x" alt="" class="radius10 img-fluid">
 						<div class="mt-20 mb-10 f-22 title">
-							Ricardo O'Nascimento
+							{{page.team3}}
 						</div>
 						<div class="f-14 semibold text-uppercase sp-20 color-heading">
-							Popkalab | Royal College of Art
+							{{page.team3Tag}}
 						</div>
 					</div>
 				</a>
 				<a href="#" class="mt-50 col-lg-3 col-md-5 col-sm-6 link color-main" target="_blank">
 					<div data-aos="fade-down" data-aos-delay="750">
-						<img src="i/katia.jpg" srcset="i/katia.jpg 2x" alt="" class="radius10 img-fluid">
+						<img src="i/luis.jpg" srcset="i/luis.jpg 2x" alt="" class="radius10 img-fluid">
 						<div class="mt-20 mb-10 f-22 title">
-							Kátia Lamarca
+							{{page.team4}}
 						</div>
 						<div class="f-14 semibold text-uppercase sp-20 color-heading">
-							IED
+							{{page.team4Tag}}
 						</div>
 					</div>
 				</a>
 				<a href="#" class="mt-50 col-lg-3 col-md-5 col-sm-6 link color-main" target="_blank">
 					<div data-aos="fade-down" data-aos-delay="0">
-						<img src="i/rogerio.jpg" srcset="i/rogerio.jpg 2x" alt="" class="radius10 img-fluid">
+						<img src="i/bianca.jpg" srcset="i/bianca.jpg 2x" alt="" class="radius10 img-fluid">
 						<div class="mt-20 mb-10 f-22 title">
-							Rogério Valverde
+							{{page.team5}}
 						</div>
 						<div class="f-14 semibold text-uppercase sp-20 color-heading">
-							Mamute Eletrônica
+							{{page.team5Tag}}
 						</div>
 					</div>
 				</a>
 				<a href="#" class="mt-50 col-lg-3 col-md-5 col-sm-6 link color-main" target="_blank">
 					<div data-aos="fade-down" data-aos-delay="250">
-						<img src="i/bianca.jpg" srcset="i/bianca.jpg 2x" alt="" class="radius10 img-fluid">
+						<img src="i/rogerio.jpg" srcset="i/rogerio.jpg 2x" alt="" class="radius10 img-fluid">
 						<div class="mt-20 mb-10 f-22 title">
-							Bianca Jhordão
+							{{page.team6}}
 						</div>
 						<div class="f-14 semibold text-uppercase sp-20 color-heading">
-							Banda Leela
+							{{page.team6Tag}}
 						</div>
 					</div>
 				</a>
 				<a href="#" class="mt-50 col-lg-3 col-md-5 col-sm-6 link color-main" target="_blank">
 					<div data-aos="fade-down" data-aos-delay="500">
-						<img src="i/luis.jpg" srcset="i/luis.jpg 2x" alt="" class="radius10 img-fluid">
+						<img src="i/katia.jpg" srcset="i/katia.jpg 2x" alt="" class="radius10 img-fluid">
 						<div class="mt-20 mb-10 f-22 title">
-							Luis Leão
+							{{page.team7}}
 						</div>
 						<div class="f-14 semibold text-uppercase sp-20 color-heading">
-							Twilio
+							{{page.team7Tag}}
 						</div>
 					</div>
 				</a>
 				<a href="#" class="mt-50 col-lg-3 col-md-5 col-sm-6 link color-main" target="_blank">
 					<div data-aos="fade-down" data-aos-delay="750">
-						<img src="i/team_3_img_8.jpg" srcset="i/team_3_img_8@2x.jpg 2x" alt=""
+						<img src="i/rafaella.jpg" srcset="i/rafaella.jpg 2x" alt=""
 							class="radius10 img-fluid">
 						<div class="mt-20 mb-10 f-22 title">
-							Você
+							{{page.team8}}
 						</div>
 						<div class="f-14 semibold text-uppercase sp-20 color-heading">
+							{{page.team8Tag}}
 						</div>
 					</div>
 				</a>
@@ -500,17 +488,19 @@
 			<div class="row justify-content-center text-center color-white">
 				<div class="col-lg-8">
 					<div class="f-14 semibold text-uppercase sp-20" data-aos="fade-down" data-aos-delay="0">
-						Edição especial 2023
+						{{page.specialEdition}}
 					</div>
 					<h2 class="mt-30" data-aos="fade-down" data-aos-delay="250">
-						CAMPUS PARTY
+						{{page.specialEditionTitle}}
 					</h2>
 					<div class="mt-35 f-18 medium op-7 text-adaptive" data-aos="fade-down" data-aos-delay="500">
-						Ao longo do ano de 2023, Lina Lopes e a equipe NANA farão bootcamps e curadorias para o espaço Fashion Tech na Campus Party. 
+						{{page.specialEditionText1}}
 						<br>
-						Fique atento as edições de Brasília, Goiânia e São Paulo que vamos nos divertir muito esse ano.
+						{{page.specialEditionText2}}
 						<br>
-						Para mais informações <a href="https://brasil.campus-party.org/cpbsb5/campus-party-fashion-tech/" target="_blank" class="action-1 bold">acesse o link</a> do espaço Fashion Tech e se inscreva no Bootcamp de Brasília.
+						{{page.specialEditionText3}} 
+						<br>
+						<a href="https://brasil.campus-party.org/cpbsb5/campus-party-fashion-tech/" target="_blank" class="action-1 bold">LINK</a>
 					</div>
 				</div>
 			</div>
@@ -522,10 +512,10 @@
 			<div class="row">
 				<div class="col-xl-8 col-lg-10">
 					<h2 class="small color-main" data-aos="fade-down" data-aos-delay="0">
-						Apoiadores
+						{{page.supportTitle}}
 					</h2>
 					<div class="mt-25 mb-70 f-22 text-adaptive color-main" data-aos="fade-down" data-aos-delay="250">
-						Uma ideia como esssa tem uma rede de apoiadores e patrocinadores
+						{{page.supportText}}
 					</div>
 				</div>
 			</div>
@@ -534,10 +524,10 @@
 					<a href="#" class="link color-main">
 						<img src="i/iconepreto.svg" alt="" class="radius_full w-170">
 						<div class="mt-15 mb-10 f-22 title">
-							LILO.ZONE
+							{{page.support1}}
 						</div>
 						<div>
-							Escola de Tecnologia Criativa
+							{{page.support1Tag}}
 						</div>
 					</a>
 					<div class="mt-15 block_socials">
@@ -563,10 +553,10 @@
 					<a href="#" class="link color-main">
 						<img src="i/mamute.png" alt="" class="radius_full w-170">
 						<div class="mt-15 mb-10 f-22 title">
-							Mamute Eletrônica
+							{{page.support2}}
 						</div>
 						<div>
-							Patrocinador kits eletrônica
+							{{page.support2Tag}}
 						</div>
 					</a>
 					<div class="mt-15 block_socials">
@@ -584,10 +574,10 @@
 					<a href="#" class="link color-main">
 						<img src="i/ied.png" alt="" class="radius_full w-170">
 						<div class="mt-15 mb-10 f-22 title">
-							IED
+							{{page.support3}}
 						</div>
 						<div>
-							Escola de Design
+							{{page.support3Tag}}
 						</div>
 					</a>
 					<div class="mt-15 block_socials">
@@ -611,10 +601,10 @@
 					<a href="#" class="link color-main">
 						<img src="i/campus.png" alt="" class="radius_full w-170">
 						<div class="mt-15 mb-10 f-22 title">
-							Campus Party
+							{{page.support4}}
 						</div>
 						<div>
-							Maior Festival de Tecnologia
+							{{page.support4Tag}}
 						</div>
 					</a>
 					<div class="mt-15 block_socials">
@@ -630,12 +620,12 @@
 				</div>
 				<div class="mb-75 col-lg-3 col-md-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
 					<a href="#" class="link color-main">
-						<img src="i/logo_conceito_manequins.svg" alt="" class="radius_full w-170">
+						<img src="i/DroneLabquadrado.png" alt="" class="radius_full w-170">
 						<div class="mt-15 mb-10 f-22 title">
-							Conceito Manequins
+							{{page.support5}}
 						</div>
 						<div>
-							Fabricação e vendas de Manequins
+							{{page.support5Tag}}
 						</div>
 					</a>
 					<div class="mt-15 block_socials">
@@ -647,12 +637,12 @@
 				</div>
 				<div class="mb-75 mb-md-0 col-lg-3 col-md-4 col-sm-6" data-aos="fade-down" data-aos-delay="500">
 					<a href="#" class="link color-main">
-						<img src="i/DroneLabquadrado.png" alt="" class="radius_full w-170">
+						<img src="i/logo_conceito_manequins.svg" alt="" class="radius_full w-170">
 						<div class="mt-15 mb-10 f-22 title">
-							Drone Lab
+							{{page.support6}}
 						</div>
 						<div>
-							Experiências com Drone
+							{{page.support6Tag}}
 						</div>
 					</a>
 					<div class="mt-15 block_socials">
@@ -689,9 +679,14 @@
 					lina@lilo.zone
 				</div>
 				<div class="col-lg-3 text-xl-right socials" data-aos="fade-down" data-aos-delay="250">
-					<a href="https://t.me/+yY26QBpXLsxjMGRh" target="_blank"
+					<!-- <a href="https://t.me/+yY26QBpXLsxjMGRh" target="_blank"
 						class="mx-15 w-40 btn sm border-transparent-white px-0">
 						<i class="fab fa-telegram mt-10">
+						</i>
+					</a> -->
+					<a href="" target="_blank"
+						class="mx-15 w-40 btn sm border-transparent-white px-0">
+						<i class="fab fa-whatsapp mt-10">
 						</i>
 					</a>
 					<a href="https://www.instagram.com/nana.wearables/" target="_blank"
