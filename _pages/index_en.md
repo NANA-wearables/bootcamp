@@ -1,6 +1,6 @@
 ---
 layout: index
-permalink: '/index-en'
+permalink: '/'
 
 menuWiki: Wiki
 menuTutorials: Tutorials
